@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Loveli — оформление заказа</title>
+        <meta name="description" content="Оформление заказа в интернет-магазине Loveli.">
+        <meta name="robots" content="noindex, nofollow">
+        <link rel="stylesheet" href="/css/site.css">
+        <script src="/js/products.js" defer></script>
+        <script src="/js/app.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-inner">
+                <nav class="main-nav" aria-label="Основная навигация">
+                    <a href="/catalog.html">Каталог</a>
+                    <a href="/brands.html">Бренды</a>
+                    <a href="/new.html">Новинки</a>
+                    <a href="/sale.html">Распродажа</a>
+                </nav>
+                <a class="brand-logo" href="/index.html">Loveli</a>
+                <div class="header-actions">
+                    <form action="/search.html" method="get">
+                        <input class="search-mini" name="q" type="search" placeholder="Поиск" aria-label="Поиск товаров">
+                    </form>
+                    <a href="/account.html">Учетная запись</a>
+                    <a href="/favorites.html">Желаемое <sup class="count" id="fav-count">0</sup></a>
+                    <a href="/cart.html">Корзина <sup class="count" id="cart-count">0</sup></a>
+                </div>
+            </div>
+        </header>
+        <main class="site-main">
+            <div class="pink-panel" style="max-width:850px">
+                <a class="btn btn-light" href="/cart.html">← Назад в корзину</a>
+                <h1 class="panel-title" style="margin-top:22px">Оформление заказа</h1>
+                <form id="checkout-form" class="form-card form-stack">
+                    <label>Имя и фамилия<input class="form-field" name="name" required placeholder="Как к вам обращаться?"></label>
+                    <label>Электронная почта<input class="form-field" name="email" type="email" required placeholder="name@example.com"></label>
+                    <label>Телефон<input class="form-field" name="phone" type="tel" required placeholder="+7 ___ ___-__-__"></label>
+                    <label>Адрес доставки<input class="form-field" name="address" required placeholder="Город, улица, дом"></label>
+                    <p class="summary-row summary-total">Итого к оплате <strong id="checkout-total">0 ₽</strong></p>
+                    <button class="btn" type="submit">Оформить заказ</button>
+                    <p class="muted">После подтверждения заказ будет сохранён в истории покупок.</p>
+                </form>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <section>
+                    <h3>Подписывайтесь на нас</h3>
+                    <ul>
+                        <li><span>Facebook</span></li>
+                        <li><span>Instagram</span></li>
+                        <li><span>TikTok</span></li>
+                        <li><span>Pinterest</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Информация о бренде</h3>
+                    <p>Loveli — косметика и уход для себя любимой.</p>
+                    <a href="/brands.html">Все бренды</a>
+                </section>
+                <section>
+                    <h3>Связаться с нами</h3>
+                    <p>Телефон: +7 963 568 23 50</p>
+                    <p>Почта: hello@loveli.example</p>
+                </section>
+                <section>
+                    <h3>Магазины</h3>
+                    <ul>
+                        <li><span>Найдите магазин поблизости</span></li>
+                        <li><span>Страна / Регион</span></li>
+                        <li><span>Международная версия</span></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="footer-bottom">
+                <div class="brand-logo footer-logo">Loveli</div>
+                <p>2026 Loveli. Все права защищены.</p>
+            </div>
+        </footer>
+        <div id="toast" class="toast" hidden role="status"></div>
+    </body>
+</html>

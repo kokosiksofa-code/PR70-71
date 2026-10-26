@@ -1,0 +1,22 @@
+{
+  "name": "loveli-backend-postgresql",
+  "version": "1.0.0",
+  "description": "Backend интернет-магазина косметики Loveli на PostgreSQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "css:build": "tailwindcss -i ./frontend/tailwind.input.css -o ./frontend/css/tailwind.css --minify",
+    "css:watch": "tailwindcss -i ./frontend/tailwind.input.css -o ./frontend/css/tailwind.css --watch"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "tailwindcss": "^3.4.17"
+  }
+}
