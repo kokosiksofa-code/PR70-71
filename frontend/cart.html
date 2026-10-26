@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Loveli — корзина</title>
+        <meta name="description" content="Корзина покупок: список товаров, количество и итоговая сумма.">
+        <meta name="robots" content="noindex, nofollow">
+        <link rel="stylesheet" href="/css/site.css">
+        <script src="/js/products.js" defer></script>
+        <script src="/js/app.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-inner">
+                <nav class="main-nav" aria-label="Основная навигация">
+                    <a href="/catalog.html">Каталог</a>
+                    <a href="/brands.html">Бренды</a>
+                    <a href="/new.html">Новинки</a>
+                    <a href="/sale.html">Распродажа</a>
+                </nav>
+                <a class="brand-logo" href="/index.html">Loveli</a>
+                <div class="header-actions">
+                    <form action="/search.html" method="get">
+                        <input class="search-mini" name="q" type="search" placeholder="Поиск" aria-label="Поиск товаров">
+                    </form>
+                    <a href="/account.html">Учетная запись</a>
+                    <a href="/favorites.html">Желаемое <sup class="count" id="fav-count">0</sup></a>
+                    <a href="/cart.html">Корзина <sup class="count" id="cart-count">0</sup></a>
+                </div>
+            </div>
+        </header>
+        <main class="site-main">
+            <div class="pink-panel">
+                <a class="btn btn-light" href="/catalog.html" style="margin-bottom:20px">← Продолжить покупки</a>
+                <h1 class="panel-title">Корзина</h1>
+                <div data-cart></div>
+                <div class="notice">Бесплатные возвраты: условия возврата зависят от категории товара. Учебный проект не принимает реальную оплату.</div>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <section>
+                    <h3>Подписывайтесь на нас</h3>
+                    <ul>
+                        <li><span>Facebook</span></li>
+                        <li><span>Instagram</span></li>
+                        <li><span>TikTok</span></li>
+                        <li><span>Pinterest</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Информация о бренде</h3>
+                    <p>Loveli — косметика и уход для себя любимой.</p>
+                    <a href="/brands.html">Все бренды</a>
+                </section>
+                <section>
+                    <h3>Связаться с нами</h3>
+                    <p>Телефон: +7 963 568 23 50</p>
+                    <p>Почта: hello@loveli.example</p>
+                </section>
+                <section>
+                    <h3>Магазины</h3>
+                    <ul>
+                        <li><span>Найдите магазин поблизости</span></li>
+                        <li><span>Страна / Регион</span></li>
+                        <li><span>Международная версия</span></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="footer-bottom">
+                <div class="brand-logo footer-logo">Loveli</div>
+                <p>2026 Loveli. Все права защищены.</p>
+            </div>
+        </footer>
+        <div id="toast" class="toast" hidden role="status"></div>
+    </body>
+</html>

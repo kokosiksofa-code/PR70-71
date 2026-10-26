@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /account.html
+Disallow: /profile.html
+Disallow: /register.html
+Disallow: /cart.html
+Disallow: /checkout.html
+Disallow: /favorites.html
+Disallow: /wishlist.html
+Disallow: /api/
+
+# Replace example.com with the real public domain before deployment.
+Sitemap: https://example.com/sitemap.xml
