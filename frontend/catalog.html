@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="ru">
     <head>
@@ -138,4 +139,146 @@
         </footer>
         <div id="toast" class="toast" hidden role="status"></div>
     </body>
+=======
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Loveli — каталог косметики</title>
+        <meta name="description" content="Каталог косметики, макияжа, ухода за кожей, волосами и ароматов.">
+        <link rel="stylesheet" href="/css/site.css">
+        <script src="/js/products.js" defer></script>
+        <script src="/js/app.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-inner">
+                <nav class="main-nav" aria-label="Основная навигация">
+                    <a href="/catalog.html">Каталог</a>
+                    <a href="/brands.html">Бренды</a>
+                    <a href="/new.html">Новинки</a>
+                    <a href="/sale.html">Распродажа</a>
+                </nav>
+                <a class="brand-logo" href="/index.html">Loveli</a>
+                <div class="header-actions">
+                    <form action="/search.html" method="get">
+                        <input class="search-mini" name="q" type="search" placeholder="Поиск" aria-label="Поиск товаров">
+                    </form>
+                    <a href="/account.html">Учетная запись</a>
+                    <a href="/favorites.html">Желаемое <sup class="count" id="fav-count">0</sup></a>
+                    <a href="/cart.html">Корзина <sup class="count" id="cart-count">0</sup></a>
+                </div>
+            </div>
+        </header>
+        <main class="site-main">
+            <div class="pink-panel">
+                <a class="btn btn-light" href="/index.html" style="margin-bottom:20px">← На главную</a>
+                <nav class="tabs">
+                    <a class="active" href="/catalog.html">Каталог</a>
+                    <a href="/brands.html">Бренды</a>
+                    <a href="/new.html">Новинки</a>
+                    <a href="/sale.html">Распродажа</a>
+                </nav>
+                <div class="mega-grid">
+                    <section>
+                        <h3>Все товары</h3>
+                        <ul>
+                            <li><a href="/catalog.html">Уход</a></li>
+                            <li><a href="/catalog.html">Макияж</a></li>
+                            <li><a href="/catalog.html">Духи</a></li>
+                            <li><a href="/catalog.html">Волосы</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Уход</h3>
+                        <ul>
+                            <li><a href="/catalog.html?q=крем">Уход для лица</a></li>
+                            <li><a href="/catalog.html?q=тело">Уход для тела</a></li>
+                            <li><a href="/catalog.html?q=крем">Космецевтика</a></li>
+                            <li><a href="/catalog.html?q=маска">Маски</a></li>
+                            <li><a href="/catalog.html?q=гигиена">Личная гигиена</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Макияж</h3>
+                        <ul>
+                            <li><a href="/catalog.html?q=лицо">Лицо</a></li>
+                            <li><a href="/catalog.html?q=глаза">Глаза</a></li>
+                            <li><a href="/catalog.html?q=губы">Губы</a></li>
+                            <li><a href="/catalog.html?q=брови">Брови</a></li>
+                            <li><a href="/catalog.html?q=палетка">Палетки</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Духи</h3>
+                        <ul>
+                            <li><a href="/catalog.html?q=аромат">Женские ароматы</a></li>
+                            <li><a href="/catalog.html?q=парфюм">Парфюмерная вода</a></li>
+                            <li><a href="/catalog.html?q=духи">Нишевая парфюмерия</a></li>
+                            <li><a href="/catalog.html?q=дом">Ароматы для дома</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Волосы</h3>
+                        <ul>
+                            <li><a href="/catalog.html?q=шампунь">Шампуни</a></li>
+                            <li><a href="/catalog.html?q=бальзам">Бальзамы</a></li>
+                            <li><a href="/catalog.html?q=уход">Уход для волос</a></li>
+                            <li><a href="/catalog.html?q=стайлинг">Стайлинг</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <h1 class="section-title" style="margin-top:40px">Все товары</h1>
+                <div class="search-row">
+                    <input id="catalog-search" type="search" placeholder="Поиск по товарам">
+                    <select id="category-filter" aria-label="Категория">
+                        <option value="all">Все категории</option>
+                        <option>Макияж</option>
+                        <option>Уход</option>
+                        <option>Волосы</option>
+                        <option>Ароматы</option>
+                    </select>
+                </div>
+                <div class="product-grid" data-products data-type="all"></div>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <section>
+                    <h3>Подписывайтесь на нас</h3>
+                    <ul>
+                        <li><span>Facebook</span></li>
+                        <li><span>Instagram</span></li>
+                        <li><span>TikTok</span></li>
+                        <li><span>Pinterest</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Информация о бренде</h3>
+                    <p>Loveli — косметика и уход для себя любимой.</p>
+                    <a href="/brands.html">Все бренды</a>
+                </section>
+                <section>
+                    <h3>Связаться с нами</h3>
+                    <p>Телефон: +7 963 568 23 50</p>
+                    <p>Почта: hello@loveli.example</p>
+                </section>
+                <section>
+                    <h3>Магазины</h3>
+                    <ul>
+                        <li><span>Найдите магазин поблизости</span></li>
+                        <li><span>Страна / Регион</span></li>
+                        <li><span>Международная версия</span></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="footer-bottom">
+                <div class="brand-logo footer-logo">Loveli</div>
+                <p>2026 Loveli. Все права защищены.</p>
+            </div>
+        </footer>
+        <div id="toast" class="toast" hidden role="status"></div>
+    </body>
+>>>>>>> f0e226132e90428f5bd37202b0ee71f82033d904
 </html>
